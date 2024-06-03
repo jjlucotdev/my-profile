@@ -1,64 +1,79 @@
-import React, { useState, useEffect } from 'react';
-import { MDBContainer, MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBNavbarNav, MDBNavbarItem, MDBNavbarLink, MDBCollapse, MDBIcon } from 'mdb-react-ui-kit';
+import React, { useState, useEffect, useRef } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarToggler,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBCollapse,
+  MDBIcon,
+} from 'mdb-react-ui-kit';
 import { Link as ScrollLink } from 'react-scroll';
 
 export default function NavBar() {
-    const [openNav, setOpenNav] = useState(false);
-    const [navbarColor, setNavbarColor] = useState('navbar-transparent');
-    const [navbarFixed, setNavbarFixed] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
+  const [navbarColor, setNavbarColor] = useState('navbar-transparent');
+  const [navbarFixed, setNavbarFixed] = useState(false);
+  const [navbarHeight, setNavbarHeight] = useState(0);
+  const navbarRef = useRef(null);
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const currentScrollPos = window.pageYOffset;
-            if (currentScrollPos > 50) {
-                setNavbarColor('navbar-light bg-light');
-                setNavbarFixed(true);
-            } else {
-                setNavbarColor('navbar-transparent');
-                setNavbarFixed(false);
-            }
-        };
+  useEffect(() => {
+    setNavbarHeight(navbarRef.current.clientHeight);
 
-        window.addEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (currentScrollPos > 50) {
+        setNavbarColor('navbar-light bg-light');
+        setNavbarFixed(true);
+      } else {
+        setNavbarColor('navbar-transparent');
+        setNavbarFixed(false);
+      }
+    };
 
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    window.addEventListener('scroll', handleScroll);
 
-    return (
-        <MDBNavbar expand='lg' light className={navbarColor} fixed={navbarFixed ? 'top' : ''}>
-            <MDBContainer fluid>
-                <MDBNavbarBrand href='#'>Navbar</MDBNavbarBrand>
-                <MDBNavbarToggler
-                    type='button'
-                    aria-expanded='false'
-                    aria-label='Toggle navigation'
-                    onClick={() => setOpenNav(!openNav)}
-                >
-                    <MDBIcon icon='bars' fas />
-                </MDBNavbarToggler>
-                <MDBCollapse navbar open={openNav}>
-                    <MDBNavbarNav>
-                        <MDBNavbarItem>
-                            <ScrollLink to="home" smooth={true} duration={500} className="nav-link">
-                                Home
-                            </ScrollLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <ScrollLink to="about" smooth={true} duration={500} className="nav-link">
-                                About
-                            </ScrollLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Projects</MDBNavbarLink>
-                        </MDBNavbarItem>
-                        <MDBNavbarItem>
-                            <MDBNavbarLink href='#'>Contact Me</MDBNavbarLink>
-                        </MDBNavbarItem>
-                    </MDBNavbarNav>
-                </MDBCollapse>
-            </MDBContainer>
-        </MDBNavbar>
-    );
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return (
+    <MDBNavbar expand='lg' light className={navbarColor} fixed={navbarFixed ? 'top' : ''} ref={navbarRef}>
+      <MDBContainer fluid>
+        <MDBNavbarToggler
+          type='button'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setOpenNav(!openNav)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+        <MDBCollapse navbar open={openNav}>
+          <MDBNavbarNav>
+            <MDBNavbarItem>
+              <ScrollLink to="home" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
+                Home
+              </ScrollLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <ScrollLink to="skills" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
+                Skills
+              </ScrollLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <ScrollLink to="experiences" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
+                Experiences
+              </ScrollLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <ScrollLink to="contact" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
+                Contact Me
+              </ScrollLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
+  );
 }
