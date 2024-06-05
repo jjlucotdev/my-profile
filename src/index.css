@@ -38,7 +38,7 @@ body, html {
 
 .card-hover:hover {
   transform: scale(1.05);
-  background-color: #e6ffe6;
+  background-color: #D1E8FF ;
 }
 
 .fade-in {
@@ -70,7 +70,7 @@ MDBContainer {
 }
 
 .bg-primary-custom {
-  background-color: #00b4d8ff !important;
+  background-color: #D1E8FF !important;
 }
 
 .navbar-transparent {
@@ -84,7 +84,114 @@ MDBContainer {
     margin: 1rem 0; /* Add margin to separate items on mobile view */
   }
 
-  #home, #skills, #experiences, #contact {
+  #home, #skills, #experiences, #contact, #about {
     padding-top: 100px; /* Increase padding for mobile view if necessary */
   }
 }
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-column {
+  animation: slideRight 1s ease-in-out;
+}
+
+.right-column {
+  animation: slideLeft 1s ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.contact-card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/backdrop.png');
+  background-size: cover;
+}
+
+.light{
+  color: #F8F3EA !important;;
+}
+
+.custom-bg-light{
+  background-color: #F8F3EA !important;;
+}
+
+.light-blue{
+  color: #9ECCFA !important;;
+}
+
+.custom-bg-light-blue{
+  background-color: #9ECCFA !important;;
+}
+
+
+.dark-blue{
+  color: #0B1957 !important;;
+}
+
+.custom-bg-dark-blue{
+  background-color: #0B1957 !important;;
+}
+
+
+.blue{
+  color: #D1E8FF !important;;
+}
+
+.custom-bg-blue{
+  background-color: #D1E8FF !important;;
+}
+
+
+

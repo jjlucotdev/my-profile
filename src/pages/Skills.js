@@ -13,7 +13,7 @@ export default function Skills() {
                 I am a diligent, versatile full stack developer with a year of hands-on experience specializing in both frontend and backend web development.
             </MDBTypography>
             <MDBRow className="my-5">
-                <MDBCol md="4">
+                <MDBCol sm="12" md="4">
                     <MDBCard className='h-100 fade-in card-hover'>
                         <MDBCardBody>
                             <div className="mb-3">
@@ -22,19 +22,19 @@ export default function Skills() {
                             <MDBCardTitle>FRONT-END DEVELOPMENT</MDBCardTitle>
                             <MDBCardText>
                                 <MDBRow className='my-5'>
-                                    <MDBCol sm={4} className='mb-3'>
+                                    <MDBCol sm={6} md={4} className='mb-3'>
                                         <FaHtml5 size={50} color="#e34c26"/> <br /> HTML5
                                     </MDBCol>
-                                    <MDBCol sm={4} className='mb-3'>
+                                    <MDBCol sm={6} md={4} className='mb-3'>
                                         <FaCss3Alt size={50} color="#1572b6"/> <br /> CSS3
                                     </MDBCol>
-                                    <MDBCol sm={4} className='mb-3'>
+                                    <MDBCol sm={6} md={4} className='mb-3'>
                                         <FaJs size={50} color="#f7df1e"/> <br /> JavaScript
                                     </MDBCol>
-                                    <MDBCol sm={4} className='mb-3'>
+                                    <MDBCol sm={6} md={4} className='mb-3'>
                                         <FaReact size={50} color="#61dafb"/> <br /> React.js
                                     </MDBCol>
-                                    <MDBCol sm={4} className='mb-3'>
+                                    <MDBCol sm={6} md={4} className='mb-3'>
                                         <FaBootstrap size={50} color="#7952b3"/> <br /> Bootstrap
                                     </MDBCol>
                                 </MDBRow>

@@ -57,13 +57,18 @@ export default function NavBar() {
               </ScrollLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
+              <ScrollLink to="about" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
+                About
+              </ScrollLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
               <ScrollLink to="skills" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
                 Skills
               </ScrollLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
               <ScrollLink to="experiences" smooth={true} duration={500} offset={-navbarHeight} className="nav-link">
-                Experiences
+                Background
               </ScrollLink>
             </MDBNavbarItem>
             <MDBNavbarItem>
