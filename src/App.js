@@ -15,16 +15,16 @@ export default function App() {
       <div id="home"  className='py-5'>
         <Home />
       </div>
-      <div id="about" className='custom-bg-light py-5'>
+      <div id="about" className='custom-bg-blue py-5'>
         <About />
       </div>
       <div id="skills" className='custom-bg-light py-5'>
         <Skills />
       </div>
-      <div id="experiences" className='custom-bg-light py-5 backdrop'>
+      <div id="experiences" className='custom-bg-light py-5'>
         <Experiences />
       </div>
-      <div id="contact" className='custom-bg-blue py-5'>
+      <div id="contact" className='custom-bg-blue py-5 backdrop'>
         <Contact />
       </div>
       <Footer />

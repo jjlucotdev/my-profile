@@ -42,11 +42,12 @@ export default function Contact() {
     return (
         <MDBContainer className="my-5 section">
             <MDBRow>
-                <MDBCol sm="12" md="6" className=" mb-5">
-                    <MDBTypography tag="div" variant="h4" className="display-5 left-column">
+                <MDBCol sm="12" md="6" className="mb-5 d-flex align-items-center justify-content-center">
+                    <MDBTypography tag="div" variant="h4" className="display-5 text-center light-blue">
                         Feel free to ask me about anything.
                     </MDBTypography>
                 </MDBCol>
+
                 <MDBCol sm="12" md="6" className="right-column">
                     <MDBCard className="contact-card">
                         <MDBCardBody>
@@ -109,7 +110,7 @@ export default function Contact() {
                                     />
                                 </MDBValidationItem>
                          
-                                <MDBBtn type="submit" color="primary" block className="my-4">
+                                <MDBBtn type="submit" color="primary" block className="my-4 btn-lg">
                                     Send
                                 </MDBBtn>
                             </MDBValidation>

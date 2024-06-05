@@ -23,13 +23,21 @@ body, html {
   }
 }
 
-#home, #skills, #experiences, #contact {
+#home, #skills, #experiences, #contact, #about {
   min-height: 100vh;
   padding-top: 70px; /* Adjust this value based on your navbar height */
 }
 
 .section {
   margin: 0;
+}
+
+.section-experience {
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  border-radius: 10px;
 }
 
 .card-hover {
@@ -192,6 +200,3 @@ MDBContainer {
 .custom-bg-blue{
   background-color: #D1E8FF !important;;
 }
-
-
-
