@@ -9,7 +9,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../public/avatar.jpg');
+  background-image: url('../public/cover.png');
   background-size: cover;
   filter: blur(5px);
   z-index: -1;
