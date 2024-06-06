@@ -7,7 +7,7 @@ export default function About() {
             <MDBRow className="my-5">
                 <MDBCol md="4" className="text-center">
                     <img
-                        src='data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…ovzKr9MwKDVXd1wYsvcwrDd4GUm1RRlDwbheUnFCTCVFU/9k='
+                        src='/profile.jpg'
                         className='img-thumbnail'
                         alt='...'
                     />
