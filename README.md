@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Web Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+This is my personal web portfolio developed using React. It showcases my projects, skills, and experience as a Full Stack Developer. The portfolio is designed as a static webpage and is deployed on GitHub.
 
-## Available Scripts
+## Features
+- **Static Webpage**: Developed in React and deployed on GitHub Pages.
+- **Contact Form**: Integrated with EmailJS to allow visitors to contact me directly through the website.
+- **Responsive Design**: Styled with Material Design Bootstrap (MDB) to ensure a responsive and modern user interface.
 
-In the project directory, you can run:
+## Technologies Used
+- **React**: A JavaScript library for building user interfaces.
+- **EmailJS**: A service to send emails directly from JavaScript.
+- **Material Design Bootstrap (MDB)**: A framework that combines Material Design and Bootstrap for a sleek design.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# About Me
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Introduction
+I am a diligent and versatile Full Stack Developer with a year of hands-on experience specializing in both frontend and backend web development. I am committed to continuous learning and passionate about creating efficient and scalable solutions.
 
-### `npm test`
+## Technical Skills
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Front-End Development
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **React.js**
+- **Bootstrap**
 
-### `npm run build`
+### Back-End Development
+- **Node.js**
+- **Express.js**
+- **MongoDB**
+- **PHP**
+- **CodeIgniter**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Database Management
+- **Database Design and Modeling**
+- **MySQL**
+- **NoSQL**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tools
+- **Git version control**
+- **Sublime Text**
+- **Visual Studio Code**
+- **Postman**
+- **WordPress**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Soft Skills
+- **Adaptability**
+- **Problem-Solving**
+- **Team Collaboration**
+- **Attention to Detail**
 
-### `npm run eject`
+## Professional Development
+My commitment to continuous learning is demonstrated by my enrollment in training boot camps and proactive efforts to upskill. While I am primarily focused on backend development, I am also keen on learning more about UI/UX principles to further enhance the overall user experience in my projects.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Goals
+I aim to become more competent in the field within the next 5-10 years by acquiring expertise in advanced technologies relevant to my field. I plan to achieve this by obtaining professional certifications in AWS or Google Cloud, as well as in PHP or Python.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact
+Feel free to reach out to me via [jjlucot.dev@gmail.com](mailto:jjlucot.dev@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/jason-jay-lucot-23b848207/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*This README was generated with ❤️ by Jason Jay Lucot*
