@@ -7,7 +7,7 @@ export default function About() {
             <MDBRow className="my-5">
                 <MDBCol md="4" className="text-center">
                     <img
-                        src='https://mdbootstrap.com/img/new/standard/city/041.webp'
+                        src='https://jjlucotdev.github.io/my-profile/static/media/cover.279e1c892ea150e9abc2.png'
                         className='img-thumbnail'
                         alt='...'
                     />
